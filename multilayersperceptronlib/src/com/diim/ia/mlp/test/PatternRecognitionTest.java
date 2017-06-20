@@ -67,7 +67,7 @@ public class PatternRecognitionTest
 			{
 				for(int j = 1; j < npatt+1; j++)
 				{
-					String pattern = "D:/IA/mlp-java-master/img/patterns/"+j+"/"+k+".png";
+					String pattern = "img/patterns/"+j+"/"+k+".png";
 					double[] inputs = ImageProcessingBW.loadImage(pattern, size, size);
 					
 					if(inputs == null)
@@ -106,7 +106,7 @@ public class PatternRecognitionTest
 		int correct = 0;
 		
 		
-		double[] inputs = ImageProcessingBW.loadImage("D:/IA/mlp-java-master/img/test4.png", size, size);
+		double[] inputs = ImageProcessingBW.loadImage("img/test4.png", size, size);
 		double[] output = net.execute(inputs);
 
 		int max = 0;
